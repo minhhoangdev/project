@@ -1,0 +1,19 @@
+RewriteEngine On
+
+RewriteRule "index.html" "index.php"
+
+RewriteRule "^([a-zA-Z0-9]+).html$" "?quanly=$1"
+
+RewriteRule "^san-pham/([0-9]+).html$" "?quanly=chitietsp&id_sanpham=$1"
+
+RewriteRule "^san-pham/([0-9]+)/size=([0-9]+).html$" "?quanly=chitietsp&id_sanpham=$1&size=$2"
+
+RewriteRule "^san-pham/([0-9]+)/color=([a-zA-Z0-9]+).html$" "?quanly=chitietsp&id_sanpham=$1&color=$2"
+
+RewriteRule "^shop/trang-([0-9]+).html$" "?quanly=shop&trang=$1"
+
+RewriteRule "^lichsudonhang/trang-([0-9]+).html$" "?quanly=lichsudonhang&trang=$1"
+
+
+
+
